@@ -1,4 +1,4 @@
-package com.example.springkafkastorm;
+package com.example.springkafkastorm.controller;
 
 
 import com.example.springkafkastorm.service.KafkaProducerService;

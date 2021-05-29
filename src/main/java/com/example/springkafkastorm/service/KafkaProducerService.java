@@ -20,8 +20,8 @@ public class KafkaProducerService {
             message.setTaskId(System.currentTimeMillis());
             message.setMsg(UUID.randomUUID().toString() + " ..... " + i + " from ricky's kafka");
             message.setSendTime(new Date().toString());
-            kafkaTemplate.send("user", JSON.toJSONString(message));
-            kafkaTemplate.send("storm", "Message just for storm");
+            //kafkaTemplate.send("user", JSON.toJSONString(message));
+            kafkaTemplate.send("user", "Message just for storm");
         }
     }
 }
